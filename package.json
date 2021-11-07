@@ -1,0 +1,36 @@
+{
+  "name": "fyp-project",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js && next lint",
+    "format": "prettier --write .",
+    "test-all": "npm run format && npm run check-format && npm run check-lint && npm run check-types && npm run build",
+    "prepare": "husky install",
+    "next-lint": "next lint"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.3.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.26.1",
+    "next": "12.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^12.0.3",
+    "@types/node": "^16.11.6",
+    "@types/react": "^17.0.34",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^12.0.3",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  }
+}
